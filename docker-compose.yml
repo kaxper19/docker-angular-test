@@ -1,0 +1,9 @@
+version: '3'
+services:
+  docker-angular-test:
+    container_name: docker-test
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8083:8083"
